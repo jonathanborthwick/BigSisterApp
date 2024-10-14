@@ -4,6 +4,7 @@ const app = express();
 const port =  process.env.PORT ||3000;
 //Has the guts of Big Sister App
 const dailyMessages = require('./routes/dailyMessages');
+app.use(cors());
 //JSON middleware
 app.use(express.json());
 
